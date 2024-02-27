@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+<h1>ICS Standards Mapping</h1>
+<table>
+    <tr>
+        <th>Regulatory Notification</th>
+        <th>ICS standrads mapping</th>
+        <th>Mapping status</th>
+        
+    </tr>
+</table>
+</div>
+ 
+<html>   
+<head>   
+    <title>upload the file : </title>   
+</head>   
+<body>   
+    <form action = "/success" method = "post" enctype="multipart/form-data">   
+        <input type="file" name="file" />   
+        <input type = "submit" value="Upload">   
+    </form>   
+</body>   
+</html>
+{% endblock %}
+
